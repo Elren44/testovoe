@@ -138,6 +138,7 @@
 .address {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -519,4 +520,32 @@
 
 .checkbox-text {
   font-size: 15px !important;
+}
+
+
+// mobile
+
+.mobile-menu {
+  display: none;
+  &__nav {}
+  &__controls {}
+  &__menu {}
+}
+.mobile-nav {
+  &__list {}
+  &__item {}
+  &__link {}
+}
+.mobile-controls {
+  &__icon {}
+  &__tag {}
+}
+.menu-mobile {
+ display: none;
+  
+  
+  &__list {
+  }
+  &__item {}
+  &__link {}
 }

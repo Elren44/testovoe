@@ -105,3 +105,14 @@ modalForm.addEventListener('submit', (e) => {
 		modalForm.submit();
 	}
 })
+
+
+const mobMenu = document.getElementById('mob-menu');
+const mobBlock = document.querySelector('.mobile-menu__block')
+
+
+mobMenu.addEventListener('click', (e) => {
+	e.preventDefault();
+	mobBlock.classList.toggle('active');
+	mobMenu.classList.toggle('active')
+})
