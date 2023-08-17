@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Vite App</title>
+    <link rel="stylesheet" href="/assets/scss/style.scss">
+    <link rel="stylesheet" href="/assets/scss/media.scss">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo-block logo-block">
+                <img src="/assets/img/logo.svg" alt="logo">
+                <div class="logo-block__text">Интернет-магазин дверей
+                    в Нижнем Новгороде
+                </div>
+            </div>
+            <div class="header__search-address-row">
+                <div class="header__search search">
+                    <form action="" class="search__form form-search">
+                        <div class="form-search__row">
+                            <img src="/assets/img/icons/search.svg" alt="search" width="24px" height="24px">
+                            <label for="search" hidden="hidden">Поиск</label>
+                            <input type="search" name="search" id="search" placeholder="Поиск">
+                            <button id="form-search-btn" type="submit"><img src="/assets/img/icons/search-arrow.svg"
+                                                                            alt="arrow" width="24px" height="24px">
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="header__address address">
+                    <img src="/assets/img/icons/map-pin.svg" alt="map pin" width="24px" height="24px">
+                    <span>Нижний Новгород, ул. Уличная, 1, оф. 15</span>
+                </div>
+            </div>
+            <div class="header__contacts contacts">
+                <div class="contacts__body">
+                    <div class="contacts__icons">
+                        <a href="#"><img src="/assets/img/icons/telegram.svg" alt="telegram" width="24px" height="24px"></a>
+                        <a href="#"><img src="/assets/img/icons/whats-app.svg" alt="whatsapp" width="24px"
+                                         height="24px"></a>
+                    </div>
+                    <a href="tel:88312199781" class="contacts__phone">8 (831) 219-97-81</a>
+                </div>
+                <a href="#" class="contacts__btn">Заказать звонок</a>
+            </div>
+            <div class="header__catalog-block menu-catalog">
+                <div class="menu-catalog__btn">
+                    <img src="/assets/img/icons/catalog-icon.svg" alt="icon">
+                    КАТАЛОГ
+                </div>
+                <div class="menu-catalog__text">
+                    Более 3000 товаров
+                </div>
+            </div>
+            <div class="header__menu-block">
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Акции</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">доставка и Установка</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Оплата</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Сертификаты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">О нас</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a href="#" class="main-menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__controls controls">
+                <div class="controls__icon">
+                    <a href="#"><img src="/assets/img/icons/settings.svg" alt="settings" width="24px" height="24px"></a>
+                    <div class="controls__tag">3</div>
+                </div>
+                <div class="controls__icon">
+                    <a href="#"><img src="/assets/img/icons/favorites.svg" alt="favorites" width="24px"
+                                     height="24px"></a>
+                    <div class="controls__tag"></div>
+                </div>
+                <div class="controls__icon">
+                    <a href="#"><img src="/assets/img/icons/cart.svg" id="cart" alt="cart" width="24px"
+                                     height="24px"></a>
+                    <div class="controls__tag" id="cart-count">0</div>
+                </div>
+                <div class="controls__icon">
+                    <a href="#"><img src="/assets/img/icons/portfolio.svg" alt="portfolio" width="24px"
+                                     height="24px"></a>
+                    <div class="controls__tag"></div>
+                </div>
+                <div class="controls__cart-block cart-block">
+
+                    <div class="cart-block__body">
+                        <div class="cart-block__item cart-item">
+                            <img src="/assets/img/cart/01-min.jpg" alt="образец">
+                            <div class="cart-item__body">
+                                <div class="cart-item__title">Браво-22 Snow Melinga / Magic Fog</div>
+                                <div class="cart-item__subtitle">Межкомнатная дверь</div>
+                            </div>
+                            <div class="cart-item__control">
+                                <div class="cart-item__price"><span class="cart-item__price-num">300 600</span> ₽</div>
+                                <div class="cart-item__add">
+                                    <div class="cart-item__minus"><img src="/assets/img/cart/minus.svg" alt="minus"
+                                                                       width="16px" height="16px"></div>
+                                    <div class="cart-item__count">0</div>
+                                    <div class="cart-item__plus"><img src="/assets/img/cart/plus.svg" alt="plus"
+                                                                      width="16px" height="16px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-block__item cart-item">
+                            <img src="/assets/img/cart/02-min.jpg" alt="образец">
+                            <div class="cart-item__body">
+                                <div class="cart-item__title">Браво-22 Snow Melinga</div>
+                                <div class="cart-item__subtitle">Межкомнатная дверь</div>
+                            </div>
+                            <div class="cart-item__control">
+                                <div class="cart-item__price"><span class="cart-item__price-num">18 600</span> ₽</div>
+                                <div class="cart-item__add">
+                                    <div class="cart-item__minus"><img src="/assets/img/cart/minus.svg" alt="minus"
+                                                                       width="16px" height="16px"></div>
+                                    <div class="cart-item__count">0</div>
+                                    <div class="cart-item__plus"><img src="/assets/img/cart/plus.svg" alt="plus"
+                                                                      width="16px" height="16px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-block__item cart-item">
+                            <img src="/assets/img/cart/01-min.jpg" alt="образец">
+                            <div class="cart-item__body">
+                                <div class="cart-item__title">Браво-22 Snow Melinga / Magic Fog</div>
+                                <div class="cart-item__subtitle">Межкомнатная дверь</div>
+                            </div>
+                            <div class="cart-item__control">
+                                <div class="cart-item__price"><span class="cart-item__price-num">18 600</span> ₽</div>
+                                <div class="cart-item__add">
+                                    <div class="cart-item__minus"><img src="/assets/img/cart/minus.svg" alt="minus"
+                                                                       width="16px" height="16px"></div>
+                                    <div class="cart-item__count">0</div>
+                                    <div class="cart-item__plus"><img src="/assets/img/cart/plus.svg" alt="plus"
+                                                                      width="16px" height="16px"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-block__item cart-item">
+                            <img src="/assets/img/cart/01-min.jpg" alt="образец">
+                            <div class="cart-item__body">
+                                <div class="cart-item__title">Браво-22 Snow Melinga / Magic Fog</div>
+                                <div class="cart-item__subtitle">Межкомнатная дверь</div>
+                            </div>
+                            <div class="cart-item__control">
+                                <div class="cart-item__price"><span class="cart-item__price-num">18 600</span> ₽</div>
+                                <div class="cart-item__add">
+                                    <div class="cart-item__minus"><img src="/assets/img/cart/minus.svg" alt="minus"
+                                                                       width="16px" height="16px"></div>
+                                    <div class="cart-item__count">0</div>
+                                    <div class="cart-item__plus"><img src="/assets/img/cart/plus.svg" alt="plus"
+                                                                      width="16px" height="16px"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-block__total">Сумма заказа:
+                        <span id="total-price">0</span> ₽
+                    </div>
+                    <a href="#" class="main-btn cart-block__btn">
+                        Перейти к оформлению →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main__container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, aperiam
+            asperiores at delectus dicta, ea eaque
+            eius
+            esse est et eveniet facilis illum itaque iure minima, molestiae nihil numquam omnis optio quaerat quasi quod
+            reiciendis repellat repellendus sit sunt ullam vel velit voluptas voluptatibus. Amet commodi cum earum error
+            fuga
+            fugiat illo magnam natus quibusdam ullam. Architecto asperiores dolor doloremque, ea eveniet, explicabo
+            libero
+            minima neque nihil non odit officia officiis placeat quas, repellendus. Adipisci aliquam, consequuntur
+            delectus
+            distinctio eaque eius error exercitationem fugit id natus nihil nobis nulla numquam odit officiis
+            perferendis, quas
+            quia quibusdam repellendus sed sint tempora voluptas? A aliquid delectus eius est fugiat fugit quidem quo,
+            sit velit
+            vitae. Accusamus ad corporis dolores laudantium libero nam necessitatibus neque odio pariatur perspiciatis
+            qui
+            quidem ratione sint soluta, suscipit. Aliquam aliquid architecto autem blanditiis dolorum eaque laboriosam
+            laborum,
+            repellat? A accusamus aliquid amet aspernatur aut consectetur consequatur culpa deleniti distinctio dolor
+            doloribus
+            earum eius exercitationem expedita, fuga harum impedit ipsum iure necessitatibus nihil nulla obcaecati
+            perspiciatis
+            quaerat quam quis quod rerum sapiente sit suscipit tempora temporibus velit voluptatibus voluptatum! Aliquam
+            aperiam
+            corporis cum dolore eaque enim esse illo, minima minus obcaecati pariatur possimus quae, quasi quo quod quos
+            sint?
+            Autem beatae earum et facere, ipsam iste, nemo neque nihil nulla porro quo quos suscipit tempore, tenetur
+            vel velit
+            vitae voluptatibus. Alias aperiam assumenda cum dolores ea eligendi error excepturi facere harum laboriosam
+            laudantium natus numquam obcaecati odit officia optio quaerat quam quod repellendus sapiente tempora totam,
+            ullam
+            veritatis! Atque dolorem est laudantium libero nostrum quaerat veniam! Amet dignissimos dolor excepturi illo
+            ipsam
+            iusto libero modi non odit officiis porro quasi quibusdam quod rem repellat sed, unde vel veniam vitae
+            voluptatibus!
+            Aspernatur cumque deleniti eum, ex expedita incidunt iste magnam natus nemo neque nihil nostrum, nulla rem
+            sapiente
+            sequi soluta ullam voluptatum? Ab aspernatur assumenda atque aut cum deserunt dolor dolorem enim eveniet hic
+            inventore ipsum, iusto libero magnam maiores minima molestiae mollitia qui quia quibusdam quidem quos
+            repudiandae
+            rerum sapiente sequi similique veritatis voluptatibus. A, aliquam animi aperiam blanditiis ducimus et
+            explicabo
+            facilis fugit harum impedit ipsum iste itaque magni modi nemo nesciunt numquam obcaecati officiis pariatur
+            perferendis praesentium quam recusandae rem repellendus reprehenderit repudiandae soluta totam. Ad amet
+            dolores
+            dolorum eveniet in molestias nostrum officiis perferendis praesentium quia quo, soluta, suscipit tenetur
+            unde
+            voluptate? Eius ex impedit numquam quam. Aspernatur error eveniet ipsa nisi nobis nulla obcaecati pariatur
+            perferendis soluta sunt tempore unde, veniam! Accusantium aspernatur atque aut dignissimos nulla odio optio
+            quisquam, ullam vel! Dolore dolorem eligendi eos explicabo illum modi perspiciatis quaerat quia recusandae
+            rem?
+            Accusantium assumenda aut, consectetur distinctio eum facere ipsum itaque magnam molestiae nisi optio,
+            placeat,
+            quidem quis reprehenderit sapiente sint soluta? Eveniet maxime modi possimus recusandae? Amet aut commodi
+            cumque
+            dolore doloremque eveniet explicabo id, maiores maxime molestiae mollitia omnis quae quam quisquam quos
+            ratione sint
+            temporibus ullam voluptates voluptatibus? Cum, cumque dolorem id illum ipsam modi nesciunt odio pariatur
+            perspiciatis provident quae, quidem recusandae sapiente tenetur voluptate? Delectus doloribus error eum in
+            incidunt
+            minima necessitatibus officiis praesentium, provident quas qui ratione rerum sapiente. Adipisci deserunt
+            exercitationem in libero maiores mollitia officia optio porro quae quos repellat, saepe veniam voluptates?
+            Cum
+            cumque deleniti dolore fugit illo necessitatibus odit officia possimus reiciendis voluptas? Ab consequatur
+            consequuntur cupiditate dignissimos incidunt iure nemo quis reiciendis tempore voluptates! Dolores eos in
+            iste minus
+            natus praesentium quisquam similique tenetur! Cum dolor esse quae recusandae sit. Adipisci debitis
+            doloremque enim
+            laborum laudantium modi odio saepe ullam ut veritatis. Accusantium est eum eveniet expedita illum, ipsam
+            minus modi
+            mollitia neque nihil nostrum officia, possimus quae sapiente sed sit ullam? Ad cum debitis dicta enim
+            eveniet fugiat
+            fugit magni maiores nesciunt nisi odio, quas quisquam, repellat similique tempora totam unde ut voluptatem
+            voluptatibus voluptatum? Aliquam commodi consequuntur dignissimos dolorem dolores impedit nihil officiis
+            possimus
+            quae rem. Animi asperiores, aut deserunt libero magni nemo non, numquam odit porro, quibusdam quos
+            repudiandae sunt
+            totam vel vitae voluptas voluptatem. Cum dolor eos esse eveniet labore necessitatibus optio saepe, vero. Ab
+            commodi
+            cumque labore, laborum maxime minima neque non sequi. Blanditiis consequatur debitis exercitationem,
+            explicabo
+            fugiat incidunt modi nam non pariatur, quae, quis vitae? Cupiditate delectus dolorem doloremque ipsum.
+            Accusantium
+            architecto assumenda fuga, ipsa molestiae quae quasi totam veritatis. Accusantium beatae consequuntur
+            delectus,
+            distinctio eaque ex fugit hic impedit ipsa, minus, nihil non nostrum odit quos ratione reprehenderit
+            repudiandae.
+            Accusantium atque, consequuntur culpa deserunt dicta, dolor, dolore eveniet maxime molestiae odio porro
+            repellat.
+            Aliquam architecto distinctio eligendi maxime nulla numquam quae quos reiciendis reprehenderit? Accusamus
+            architecto
+            culpa eligendi facere facilis fuga molestiae nobis reprehenderit soluta sunt. A adipisci beatae eos incidunt
+            itaque
+            nobis officiis pariatur! Adipisci, animi deleniti esse illum ipsa laudantium possimus quaerat quod sed
+            tempora!
+            Autem, explicabo, quae? Aliquid, amet commodi cumque deleniti doloribus eius exercitationem expedita,
+            inventore iure
+            iusto maiores mollitia perspiciatis quibusdam, quisquam suscipit unde voluptas. Consectetur, consequatur cum
+            dolor
+            error in incidunt perspiciatis vel! Dolore eos nostrum omnis provident repellendus reprehenderit voluptatum.
+            Accusantium consequuntur ea fuga illum iure mollitia numquam rerum temporibus totam. Asperiores aspernatur
+            atque
+            consequuntur cum, delectus dignissimos, eius, expedita explicabo in ipsa iste laudantium nobis porro quaerat
+            qui
+            ratione repellendus sequi tenetur vel veniam. Ad assumenda aut eveniet explicabo ipsum minus nobis non
+            numquam quis
+            suscipit. Consectetur deserunt maiores mollitia nihil non omnis provident quae quibusdam quo. Ad aliquid aut
+            blanditiis commodi delectus distinctio eaque, eius esse est, fugiat inventore laboriosam libero nemo nisi
+            nobis non
+            nostrum perspiciatis praesentium quaerat quia quibusdam quidem quo saepe sapiente soluta totam ut veniam
+            veritatis
+            vero voluptatem. Beatae blanditiis delectus enim exercitationem modi molestias mollitia nihil, omnis,
+            provident quae
+            ratione temporibus tenetur, unde. Assumenda eaque harum inventore quos repudiandae saepe tenetur ullam,
+            velit vero
+            voluptas. Eius fuga itaque iusto laboriosam quam! Ab atque beatae commodi debitis doloremque dolores
+            expedita fugiat
+            hic impedit libero, nemo omnis pariatur quas qui, quibusdam repudiandae, sequi voluptatem voluptates.
+            Consectetur,
+            facere, voluptas. Dolores exercitationem porro quasi voluptatum? Aperiam architecto harum minima modi
+            molestiae
+            numquam quasi quibusdam quod tempore vitae! A dolore fugit labore numquam officia!
+        </div>
+    </main>
+    <div id="question-modal" class="modal">
+        <div class="modal__title">Заполните данные и мы свяжемся с вами в рабочее время и ответим на все интересующие
+            вопросы
+        </div>
+        <form class="modal__form form-modal" action="#" method="post">
+            <div class="form-modal__row">
+                <label for="name" hidden>Имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя*">
+            </div>
+            <div class="form-modal__row">
+                <label for="phone" hidden>Телефон</label>
+                <input type="number" name="phone" id="phone" placeholder="Телефон*">
+            </div>
+            <div class="form-modal__row form-modal__checkbox">
+                <label for="agreed" hidden>Согласие</label>
+                <span class="custom-checkbox">
+
+            </span>
+                <input type="checkbox" name="agreed" id="agreed" value="yes">
+
+                <span class="checkbox-text">Даю свое согласие на обработку персональных данных</span>
+            </div>
+            <button type="submit" class="main-btn form-modal__btn">Заказать звонок</button>
+            <div class="modal__close"><img src="/assets/img/close.svg" alt="закрыть" width="24px" height="24px"></div>
+        </form>
+    </div>
+</div>
+<script type="module" src="/assets/script/main.js"></script>
+</body>
+</html>

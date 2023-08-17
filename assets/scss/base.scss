@@ -1,0 +1,51 @@
+$color-system-white: #ffffff;
+$color-system-neutral-100: #E4E4E7;
+$color-system-neutral-400: #AFB0B2;
+$color-system-brand-200: #D2EE9A;
+$color-states-normal: #8BBF1F;
+$color-text-primary: #222427;
+$color-text-secondary: #5E6062;
+$max-width: 1920px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: TT Norms Pro, sans-serif;
+    background-color: $color-system-white;
+    line-height: 130%;
+}
+
+.container {
+    max-width: $max-width;
+    margin: 0 auto;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-btn {
+    padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: $color-states-normal;
+    font-size: 15px;
+    font-weight: 500;
+    color: $color-system-white;
+    cursor: pointer;
+}
