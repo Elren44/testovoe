@@ -12,6 +12,7 @@ const customCheckbox = document.querySelector('.custom-checkbox');
 const modalBtn = document.querySelector('.contacts__btn')
 const closeModal = document.querySelector('.modal__close')
 const modalForm = document.querySelector('.form-modal');
+const modalSubmit = document.querySelector('.form-modal__btn');
 let totalItems = 0
 let totalPrice = 0
 
@@ -73,6 +74,18 @@ closeModal.addEventListener('click', (e) => {
 })
 
 
+function addErrorClass (text) {
+	modalSubmit.classList.add('error')
+	modalSubmit.innerHTML = text
+	modalSubmit.disabled = true
+		setTimeout(() => {
+			modalSubmit.classList.remove('error')
+			modalSubmit.innerHTML = 'Заказать звонок'
+			modalSubmit.disabled = false
+		}, 2000)
+}
+
+
 function validatePhone (phone) {
 	let regex = /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/;
 	return regex.test(phone)
@@ -84,13 +97,11 @@ modalForm.addEventListener('submit', (e) => {
 	const phone = modalForm.phone.value
 	const agreed = modalForm.agreed.checked
 	if (!validatePhone(phone)) {
-		alert("данные заполнены не правильно, проверьте номер телефона")
+		addErrorClass("Проверьте телефон")
 	}
 	else if (!agreed) {
-		alert("нужно дать согласие")
+		addErrorClass("Нужно подтверждение")
 	} else {
 		modalForm.submit();
 	}
-
-
 })
